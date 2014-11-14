@@ -1,12 +1,14 @@
 package com.github.rbrugier;
 
-import com.github.rbrugier.services.BusinessService;
-
 public class Main {
 
     public static void main(String[] args) {
-        ApplicationComponent app = Dagger_ApplicationComponent.builder().build();
-        BusinessService businessService = app.getBusinessService();
-        businessService.doComplexProcess();
+        ApplicationComponent appComponent = Dagger_ApplicationComponent.builder()
+                .tweeterModule(new TweeterModule("rbrugier"))
+                .build();
+
+        Tweeter tweeter = appComponent.getTweeter();
+        tweeter.tweet("Hello");
+        appComponent.getTimeline().getTimeline(10).stream().forEach(System.out::println);
     }
 }
