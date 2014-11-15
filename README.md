@@ -14,3 +14,4 @@ Example is based on @JakeWharton #Devoxx2014 session on Dagger2
  - [Dagger 2 Github repository](https://github.com/google/dagger)
  - [Dagger 2 Design Document](https://docs.google.com/document/d/1fwg-NsMKYtYxeEWe82rISIHjNrtdqonfiHgp8-PQ7m8/edit)
  - [The Future of Dependency Injection with Dagger 2 talk](http://cfp.devoxx.be/2014/talk/FCZ-2520/The_Future_of_Dependency_Injection_with_Dagger_2)
+- [The Future of Dependency Injection with Dagger 2 slides](https://speakerdeck.com/jakewharton/dependency-injection-with-dagger-2-devoxx-2014
